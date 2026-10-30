@@ -86,8 +86,8 @@ def get_excel_path():
     """获取与py文件同名的xlsx文件路径"""
     script_path = os.path.abspath(__file__)
     script_dir = os.path.dirname(script_path)
-    script_name = os.path.splitext(os.path.basename(script_path))[0]
-    excel_path = os.path.join(script_dir, f"{script_name}.xlsx")
+    script_name = "Worklog"
+    excel_path = os.path.join(script_dir, "Worklog.xlsx")
     return excel_path, script_name
 
 def is_duplicate(ws, row_data):
